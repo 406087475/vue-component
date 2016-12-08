@@ -1,5 +1,5 @@
 <template>
-  <div class="tabs">
+  <div class="tabs-wrap">
     <ul class="tabs-header" :class="{ 'card': card }">
       <template v-for="tab in tabs">
         <li v-if="!tab.disabled" :class="{ 'active': active === $index }" @click="switchTab( $index, tab )" data-title="{{ tab.title }}"></li>
@@ -60,10 +60,10 @@ ul li {
 .tabs-header li {
   display: inline-block;
   padding: 5px 0;
+  cursor: pointer;
 }
 .tabs-header li:after {
   padding: 6px 20px;
-  cursor: pointer;
   content: attr(data-title);
   border: #fff 1px solid;
   border-bottom: #ddd 1px solid;
@@ -91,6 +91,7 @@ ul li {
 .card .active:hover,
 .card .disabled:hover {
   background: #fff;
+  cursor: inherit;
 }
 
 .tabs-content {

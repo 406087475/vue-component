@@ -1,5 +1,5 @@
 <template>
-  <div class="tabs-wrap">
+  <div class="tabs">
     <tabs card>
       <tab title="商品管理">商品管理2.0</tab>
       <tab title="图片空间">图片空间2.0</tab>
@@ -45,13 +45,16 @@ export default {
 
 <style>
 html {
+  width: 1000px;
+  margin: 0 auto;
   height: 100%;
+  padding: 20px;
 }
 a {
   color: #42b983;
   text-decoration: none;
 }
-.tabs-wrap {
+.tabs {
   width: 400px;
 }
 </style>
