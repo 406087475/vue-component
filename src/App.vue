@@ -1,6 +1,6 @@
 <template>
   <div class="tabs-wrap">
-    <tabs>
+    <tabs card>
       <tab title="商品管理">商品管理2.0</tab>
       <tab title="图片空间">图片空间2.0</tab>
     </tabs>
@@ -28,6 +28,9 @@ export default {
       }, {
         title: 222,
         disabled: true,
+        component: 'sizes'
+      }, {
+        title: 333,
         component: 'sizes'
       }]
     }

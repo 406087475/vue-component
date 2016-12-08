@@ -24,7 +24,6 @@ export default {
 
   created () {
     let vm = this
-
     if ( vm.dataRender ) return
 
     let parent = vm.$parent
